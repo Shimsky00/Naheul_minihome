@@ -45,7 +45,7 @@
   }
   
 .background {
-    background-image: url("./자료실/배경.PNG");
+    background-image: url("../자료실/배경.PNG");
   }
 
 .guestbook-image > img {
