@@ -1,0 +1,157 @@
+body{
+    background-image: url("./자료실/패턴.png");
+    background-color:rgb(172, 172, 172);
+    background-size: 100px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bookcover{
+    position: relative;
+    margin: 50px auto ;
+    background-color: #a3d4dd;
+    width: 950px;
+    height: 650px;
+    border-radius: 1%;  
+    border:1px solid #8d8c8c;
+}
+.bookdot{
+    position: absolute;
+    top:15px;
+    left:15px;
+    background-color: hsla(0, 2%, 90%, 0);
+    width: 913px;
+    height: 615px;
+    border-radius: 1%;
+    border: 3px dashed #e7e6e6;
+}
+.page{
+    position: absolute;
+    top:8px;
+    left:11px;
+    background-color: hsl(0, 2%, 90%);
+    width: 890px;
+    height: 594px;
+    border-radius: 1%;
+    display: flex;
+    font-size: 14px;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    padding: 20px 13px 13px 13px;
+}
+
+.visit{
+    flex: 0.05;
+    text-align: center;
+    font-weight: bold;
+}
+
+span:nth-child(1){
+    color:red;
+    font-weight: bold;
+}
+.profile{
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border:1px groove rgba(84, 84, 84, 0.212);
+    font-family: 'DungGeunMo';
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.profile img{
+    margin: 30px 20px 10px 22px;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #80808094;
+}
+
+.intro{
+    margin: 10px 20px 20px 25px;
+}
+
+.intro2{
+    margin: 30px 20px 20px 25px;
+}
+
+.intro3{
+    margin: 6rem 10px 0 25px;
+    font-size: 17px;
+}
+
+.dropdown .surfing{
+    height: 30px;
+    width: 150px;
+    margin: 10px 0 0 24px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 0px 13px 8px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex: 0.05;
+}
+
+.name{
+    flex: 1;
+    font-family: 'DungGeunMo';
+}
+
+.addr{
+    text-align: right ;
+    margin-right: 5px;
+    flex: 1;  
+}
+
+.content{
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border:1px groove rgba(84, 84, 84, 0.212);
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    flex: 0.17;
+    margin: 13px 13px 13px 0;
+}
+
+.menu > .realmenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'DungGeunMo';
+}
+.menu .button{
+    width: 75px;
+    font-size: 15px;
+    background-color: hsla(216, 56%, 50%, 0.918);
+    color: azure;
+    padding: 9px 0 9px 10px;
+    margin-top: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration-line : none;
+}
+
+.menu a:hover{
+    background-color:#3c268f98;
+}

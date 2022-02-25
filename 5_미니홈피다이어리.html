@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2022 나흘의 미니홈피</title>
+    <link rel="stylesheet" href="./Css/6_font.css" />
+    <link rel="stylesheet" href="./Css/8_layout.css" />
+    <link rel="stylesheet" href="./Css/11_Diary.css" />
+    <script src="https://kit.fontawesome.com/42e7b47be3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bookcover">
+        <div class="bookdot">
+          <div class="page">
+            <div class="col1">
+                <div class="visit">TODAY <span>13</span> | TOTAL 201123</div>
+                <div class="profile">
+                  <img src="./자료실/쿠우.PNG">
+                  <div class="intro">
+                    캬~ .. 인생은.. 뭘까..?
+                    인생ºl 재ㅁı는 곧 완벽ㅎŁ 코딩일ㄲr..?
+                    난 오늘도 <br>ㄴrºl 코딩øłl 취ㅎŁㄷr..
+                  </div>
+                  <div class="intro2">
+                    인생은 쿠우처럼..
+                  </div>
+                  <div class="intro3">
+                    나흘 (♀)
+                  </div>
+                  <div class="dropdown">
+                    <select name="surfing" class="surfing" onchange="window.location.href=this.value;">
+                      <option value="none" selected disabled hidden>파도타기</option>
+                      <option value="https://codemate.kr/@Naheul">코드메이트로 가기</option>
+                      <option value="https://www.instagram.com/coding_comu/">인스타그램으로 가기</option>
+                  </select>
+                  </div>
+                </div>
+            </div>
+            <div class="col2">
+              <div class="info">
+                <div class="name">쿠우ºl ㄴr흘 ( っ '～')づ</div>
+                <div class="addr">https://shimsky00.github.io/Naheul_minihome</div>
+              </div>
+              <div class="content">
+                <div class="content2">
+                  <div class="diarybox">
+                    <div class="date">
+                      <div class="today">02.21 <br>MON</div>
+                      <div class="month">1 2 3 4 <span>5</span> <span>6</span> 7 8 9 10 11 <span>12</span> <span>13</span> 14 15 16 17
+                      18 <span>19</span> <span>20</span> 21 22 23 24 25 <span>26</span> <span>27</span> 28
+                      </div>  
+                    </div>
+                    
+                    <div class="diary">
+                      <div class="diarycontent">
+                        <div class="today">2022.02.21 월 PM 7:30</div>
+                        <div class="text">
+                          오늘 9시부터 6시까지 점심시간 빼고 일했다..<br>
+                          손님들이 너무 많아서 힘들었다.. <br>
+                          코로나진단키트도 소분해야하고 할 일이 많은데<br>
+                          또 처방전은 한 사람당 왜 이렇게 많은지!!<br>
+                          너무 힘들었지만 집 와서 바로 모각코했더랬지 <br><br>
+                          오늘은 스스로에게 칭찬해주고 수고했다고 말하고 싶다 :)                               
+                        </div>
+                      </div>
+
+                      <div class="diarycontent">
+                        <div class="today">2022.02.20 일 AM 10:30</div>
+                        <div class="text">
+                          이 싸이월드 감성을 살려.. <br>
+                          나도 한번 그 글귀들을 적어보았다.. <br>
+                          인소시대지만 인소를 안 본 사람으로서 너무 재밌음<br><br>
+                          유명할 때 봤어야 했는데.. 뒷북 둥둥둥
+                          </div>         
+                        </div>
+                    
+                      <div class="diarycontent">
+                        <div class="today">2022.02.19 토 PM 13:30</div>
+                        <div class="text">
+                          " 그러니까 다음이라는 게 대체 언젠데... <br>
+                          나, 여지껏 살면서, 기다리는 건 x같이 많이<br>
+                          해봤어...<br>
+                          너... 언제까지 기다려야 되는건데... "<br><br>
+                          <span style="font-weight: bold;">by. 그놈은 멋있었다</span>
+                        </div>         
+                      </div>
+
+                      <div class="diarycontent">
+                        <div class="today">2022.02.19 토 PM 13:19</div>
+                        <div class="text">
+                          <span style="color: red;">일루젼증후군</span> <span style="font-weight: bold;">illusion Syndrome</span><br><br>
+                          사랑하는 사람이나 호감이 가는<br>
+                          사람이 조금만 잘해줘도 착각하여<br>
+                          어찌할 바를 모르는 상태<br>
+                          머리가 깨지고 답답하며<br>
+                          하루내내 그사람이 생각나는<br>
+                          비참한 증후군<br>
+                        </div>         
+                      </div>
+
+                      <div class="diarycontent" id="secret-box">
+                        <div class="today">나의 비밀일기</div>
+                        <div class="text" id="secret-diary"></div>
+                      </div>
+                      
+                      <button id="button" onclick="getTextFile()"><i class="fa-solid fa-lock icon"></i>&nbsp;나흘의 보물창고</button>
+                    </div>     
+                  </div>
+                </div> 
+              </div>  
+            </div>
+            <div class="menu">
+              <div class="realmenu">
+                <a class="button" href="5_미니홈피.html" role="button">홈</a>
+                <a class="button" href="5_미니홈피다이어리.html" role="button">다이어리</a>
+                <a class="button" href="5_미니홈피사진첩.html" role="button">사진첩</a>
+                <a class="button" href="5_미니홈피방명록.html" role="button">방명록</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+    <script>
+      function getTextFile(){
+        var input = document.createElement("input");
+        input.type="file";
+        input.accept="text/plain";
+        input.onchange=function (event){
+          processFile(event.target.files[0]);
+        };
+        input.click();
+      }
+
+      function processFile(file){
+        var reader = new FileReader();
+        reader.readAsText(file, "utf-8");
+
+        reader.onload = function(){
+          document.getElementById("secret-diary").innerText=reader.result;
+          document.getElementById("secret-box").style.display="block"
+        };
+      }
+    </script>
+  </body>
+</html>
